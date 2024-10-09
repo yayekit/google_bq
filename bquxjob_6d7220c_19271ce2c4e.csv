@@ -1,0 +1,101 @@
+conversion_path,user_count,total_sessions,total_transactions
+Organic Search,264507,264507,1210
+Referral,42247,42247,1100
+Referral > Referral,7899,15743,958
+Direct,88262,88262,723
+Referral > Referral > Referral,2839,8488,684
+Organic Search > Organic Search,22915,45604,636
+Referral > Referral > Referral > Referral,1348,5384,460
+Direct > Direct,9174,18259,392
+Organic Search > Organic Search > Organic Search,5474,16355,360
+Referral > Referral > Referral > Referral > Referral,705,3521,349
+Direct > Direct > Direct,2616,7816,228
+Referral > Referral > Referral > Referral > Referral > Referral,405,2427,228
+Organic Search > Organic Search > Organic Search > Organic Search,2124,8464,208
+Referral > Referral > Referral > Referral > Referral > Referral > Referral,235,1642,166
+Organic Search > Organic Search > Organic Search > Organic Search > Organic Search,1037,5168,158
+Paid Search,11776,11776,153
+Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral,170,1360,142
+Direct > Direct > Direct > Direct,1047,4176,131
+Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search,507,3034,111
+Direct > Referral,981,1962,86
+Paid Search > Paid Search,1502,2992,79
+Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral,96,863,71
+Direct > Referral > Referral,308,924,65
+Direct > Direct > Direct > Direct > Direct,483,2405,62
+Organic Search > Referral,1154,2308,60
+Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral,70,700,57
+Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search,320,2234,53
+Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search,191,1527,50
+Direct > Direct > Direct > Direct > Direct > Direct,277,1660,49
+Direct > Referral > Referral > Referral,131,524,46
+Direct > Direct > Direct > Direct > Direct > Direct > Direct,159,1110,45
+Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral,47,516,42
+Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral,41,489,40
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,111,888,38
+Social,201957,201957,36
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,1,86,36
+Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search,134,1202,35
+Referral > Organic Search,822,1644,34
+Organic Search > Paid Search,1047,2094,31
+Display,1415,1415,31
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,67,603,31
+Direct > Referral > Referral > Referral > Referral,57,285,29
+Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral,25,325,27
+Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral,1,40,27
+Paid Search > Paid Search > Paid Search,375,1120,26
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,55,549,26
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,20,320,25
+Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral,11,187,24
+Direct > Organic Search,1038,2076,23
+Paid Search > Paid Search > Paid Search > Paid Search,169,675,22
+Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Display > Direct > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display > Display,1,278,22
+Organic Search > Referral > Referral,215,645,21
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,7,168,21
+Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search,62,679,20
+Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search,16,272,20
+Social > Social,5949,11821,19
+Paid Search > Organic Search,921,1842,19
+Social > Social > Social > Social > Social,173,863,19
+Organic Search > Referral > Referral > Referral,60,240,19
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,2,62,19
+Referral > Direct,319,638,18
+Paid Search > Organic Search > Organic Search,138,412,18
+Direct > Direct > Referral > Referral,57,228,18
+Direct > Direct > Direct > Referral,57,228,18
+Direct > Referral > Referral > Referral > Referral > Referral,34,204,18
+Direct > Direct > Referral,176,527,17
+Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search,39,507,17
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,30,419,17
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,27,296,17
+Direct > Organic Search > Organic Search,193,576,16
+Display > Display,198,396,16
+Referral > Organic Search > Referral,112,336,16
+Direct > Referral > Referral > Referral > Referral > Referral > Referral > Referral,14,112,16
+Organic Search > Organic Search > Referral,187,560,15
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,3,87,15
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,31,403,14
+Paid Search > Paid Search > Paid Search > Paid Search > Paid Search,70,350,14
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,4,112,14
+Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search,80,796,13
+Referral > Referral > Organic Search,126,377,13
+Organic Search > Organic Search > Paid Search,145,433,12
+Referral > Direct > Referral,78,232,12
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,2,52,12
+Organic Search > Organic Search > Display,81,243,11
+Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral,13,208,11
+Direct > Referral > Referral > Referral > Referral > Referral > Referral,20,140,11
+Referral > Organic Search > Referral > Referral > Referral,15,75,11
+Direct > Referral > Referral > Referral > Display > Display > Display > Organic Search > Referral > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search,1,34,11
+Organic Search > Organic Search > Organic Search > Referral > Referral > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Direct > Organic Search > Organic Search > Paid Search,1,28,11
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Paid Search > Paid Search > Paid Search > Paid Search > Paid Search > Paid Search,1,22,11
+Direct > Direct > Organic Search,136,404,10
+Organic Search > Paid Search > Paid Search,133,398,10
+Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct > Direct,9,180,10
+Referral > Referral > Referral > Organic Search,40,160,10
+Direct > Direct > Referral > Referral > Referral,32,159,10
+Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral > Referral,7,126,10
+Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Direct > Direct > Direct > Direct > Organic Search > Direct > Direct > Direct > Organic Search,1,41,10
+Organic Search > Organic Search > Organic Search > Paid Search > Organic Search > Organic Search > Organic Search > Organic Search > Referral > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search > Referral > Referral > Paid Search > Organic Search > Paid Search > Paid Search > Paid Search > Paid Search > Organic Search > Organic Search > Organic Search > Organic Search > Organic Search,1,29,10
+Social > Social > Social,1307,3915,9
+Organic Search > Display,491,982,9
