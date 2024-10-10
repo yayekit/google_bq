@@ -25,7 +25,8 @@ SELECT
   COUNT(*) AS user_count,
   SUM(sessions) AS total_sessions,
   SUM(transactions) AS total_transactions,
-  SAFE_DIVIDE(SUM(transactions), COUNT(*)) AS transactions_per_user,
+  -- below are 2 additional metrics that may be avoided; were included for a potential use in stats
+  SAFE_DIVIDE(SUM(transactions), COUNT(*)) AS transactions_per_user, 
   SAFE_DIVIDE(SUM(sessions), COUNT(*)) AS sessions_per_user
 FROM
   path_creation

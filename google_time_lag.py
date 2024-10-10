@@ -2,13 +2,13 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-# Read the CSV file
+# gbq output file
 df = pd.read_csv('bquxjob_777a5640_19272ca89e0.csv')
 
-# Create subplot with secondary y-axis
+# a subplot with secondary y-axis
 fig = make_subplots(specs=[[{"secondary_y": True}]])
 
-# Add bar chart for conversions
+# barchart for conversions
 fig.add_trace(
     go.Bar(
         x=df['time_lag_bucket'],
@@ -19,7 +19,7 @@ fig.add_trace(
     secondary_y=False,
 )
 
-# Add line chart for percentage of total
+# linechart on the right that shows the percentage of total
 fig.add_trace(
     go.Scatter(
         x=df['time_lag_bucket'],
@@ -31,7 +31,7 @@ fig.add_trace(
     secondary_y=True,
 )
 
-# Customize layout
+# layout
 fig.update_layout(
     title=dict(
         text='Time Lag vs Conversions',
@@ -57,7 +57,7 @@ fig.update_layout(
             font=dict(size=18, color='#000000', family="Arial Black")
         ),
         tickfont=dict(size=14, color='#000000', family="Arial"),
-        range=[0, max(df['percentage_of_total']) * 1.1]  # Adjust range for better visibility
+        range=[0, max(df['percentage_of_total']) * 1.1]
     ),
     legend=dict(
         font=dict(size=16, color='#000000', family="Arial"),
@@ -72,12 +72,10 @@ fig.update_layout(
     width=1200,
 )
 
-# Update axes
+#axes
 fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
 fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
 
-# Show the plot
-fig.show()
 
-# Save the plot as a high-rez image
+fig.show()
 fig.write_image("google_time_lag.png", scale = 5, width = 1920, height = 1080)

@@ -39,7 +39,6 @@ SELECT
     ELSE '30+'
   END AS time_lag_bucket,
   COUNT(*) AS conversions,
-  0.00 AS conversion_value,  -- Placeholder as we don't have actual conversion values
   ROUND(COUNT(*) / (SELECT COUNT(*) FROM time_lags) * 100, 2) AS percentage_of_total
 FROM 
   time_lags
