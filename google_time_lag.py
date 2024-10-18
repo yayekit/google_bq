@@ -7,23 +7,18 @@ def main():
     # File path
     csv_file = 'bquxjob_777a5640_19272ca89e0.csv'
 
-    # Check if file exists
     if not os.path.exists(csv_file):
         raise FileNotFoundError(f"File '{csv_file}' not found.")
 
-    # Read data
     df = pd.read_csv(csv_file)
 
-    # Validate data
     required_columns = ['time_lag_bucket', 'conversions', 'percentage_of_total']
     if not all(col in df.columns for col in required_columns):
         missing_cols = [col for col in required_columns if col not in df.columns]
         raise ValueError(f"Missing columns in data: {', '.join(missing_cols)}")
 
-    # Create figure
     fig = create_time_lag_vs_conversions_figure(df)
 
-    # Show and save figure
     fig.show()
     fig.write_image("google_time_lag.png", scale=5, width=1920, height=1080)
 
@@ -44,13 +39,10 @@ def create_time_lag_vs_conversions_figure(df):
         'legendfont': dict(size=16, color=colors['text'], family="Arial")
     }
 
-    # Max percentage for y-axis range
     max_percentage = df['percentage_of_total'].max()
 
-    # Create subplot with secondary y-axis
     fig = make_subplots(specs=[[{"secondary_y": True}]])
 
-    # Add bar chart for conversions
     fig.add_trace(
         go.Bar(
             x=df['time_lag_bucket'],
@@ -61,7 +53,6 @@ def create_time_lag_vs_conversions_figure(df):
         secondary_y=False,
     )
 
-    # Add line chart for percentage of total
     fig.add_trace(
         go.Scatter(
             x=df['time_lag_bucket'],
@@ -73,7 +64,6 @@ def create_time_lag_vs_conversions_figure(df):
         secondary_y=True,
     )
 
-    # Update layout
     fig.update_layout(
         title=dict(text='Time Lag vs Conversions', font=fonts['title']),
         xaxis=dict(
