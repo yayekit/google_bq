@@ -1,81 +1,111 @@
+import os
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-# gbq output file
-df = pd.read_csv('bquxjob_777a5640_19272ca89e0.csv')
+def main():
+    # File path
+    csv_file = 'bquxjob_777a5640_19272ca89e0.csv'
 
-# a subplot with secondary y-axis
-fig = make_subplots(specs=[[{"secondary_y": True}]])
+    # Check if file exists
+    if not os.path.exists(csv_file):
+        raise FileNotFoundError(f"File '{csv_file}' not found.")
 
-# barchart for conversions
-fig.add_trace(
-    go.Bar(
-        x=df['time_lag_bucket'],
-        y=df['conversions'],
-        name="Conversions",
-        marker_color='rgba(99,110,250,0.7)',
-    ),
-    secondary_y=False,
-)
+    # Read data
+    df = pd.read_csv(csv_file)
 
-# linechart on the right that shows the percentage of total
-fig.add_trace(
-    go.Scatter(
-        x=df['time_lag_bucket'],
-        y=df['percentage_of_total'],
-        name="Percentage of Total",
-        line=dict(color='rgba(239,85,59,0.8)', width=3),
-        mode='lines+markers',
-    ),
-    secondary_y=True,
-)
+    # Validate data
+    required_columns = ['time_lag_bucket', 'conversions', 'percentage_of_total']
+    if not all(col in df.columns for col in required_columns):
+        missing_cols = [col for col in required_columns if col not in df.columns]
+        raise ValueError(f"Missing columns in data: {', '.join(missing_cols)}")
 
-# layout
-fig.update_layout(
-    title=dict(
-        text='Time Lag vs Conversions',
-        font=dict(size=24, color='#000000', family="Arial Black")
-    ),
-    xaxis=dict(
-        title=dict(
-            text='Time Lag (Days)',
-            font=dict(size=18, color='#000000', family="Arial Black")
+    # Create figure
+    fig = create_time_lag_vs_conversions_figure(df)
+
+    # Show and save figure
+    fig.show()
+    fig.write_image("google_time_lag.png", scale=5, width=1920, height=1080)
+
+def create_time_lag_vs_conversions_figure(df):
+    # Define colors and fonts
+    colors = {
+        'conversions': 'rgba(99,110,250,0.7)',
+        'percentage_of_total': 'rgba(239,85,59,0.8)',
+        'grid': 'lightgray',
+        'text': '#000000',
+        'background': 'white'
+    }
+
+    fonts = {
+        'title': dict(size=24, color=colors['text'], family="Arial Black"),
+        'axis_title': dict(size=18, color=colors['text'], family="Arial Black"),
+        'tickfont': dict(size=14, color=colors['text'], family="Arial"),
+        'legendfont': dict(size=16, color=colors['text'], family="Arial")
+    }
+
+    # Max percentage for y-axis range
+    max_percentage = df['percentage_of_total'].max()
+
+    # Create subplot with secondary y-axis
+    fig = make_subplots(specs=[[{"secondary_y": True}]])
+
+    # Add bar chart for conversions
+    fig.add_trace(
+        go.Bar(
+            x=df['time_lag_bucket'],
+            y=df['conversions'],
+            name="Conversions",
+            marker_color=colors['conversions'],
         ),
-        tickfont=dict(size=14, color='#000000', family="Arial")
-    ),
-    yaxis=dict(
-        title=dict(
-            text='Number of Conversions',
-            font=dict(size=18, color='#000000', family="Arial Black")
+        secondary_y=False,
+    )
+
+    # Add line chart for percentage of total
+    fig.add_trace(
+        go.Scatter(
+            x=df['time_lag_bucket'],
+            y=df['percentage_of_total'],
+            name="Percentage of Total",
+            line=dict(color=colors['percentage_of_total'], width=3),
+            mode='lines+markers',
         ),
-        tickfont=dict(size=14, color='#000000', family="Arial")
-    ),
-    yaxis2=dict(
-        title=dict(
-            text='Percentage of Total Conversions',
-            font=dict(size=18, color='#000000', family="Arial Black")
+        secondary_y=True,
+    )
+
+    # Update layout
+    fig.update_layout(
+        title=dict(text='Time Lag vs Conversions', font=fonts['title']),
+        xaxis=dict(
+            title=dict(text='Time Lag (Days)', font=fonts['axis_title']),
+            tickfont=fonts['tickfont'],
+            showgrid=True, gridwidth=1, gridcolor=colors['grid'],
         ),
-        tickfont=dict(size=14, color='#000000', family="Arial"),
-        range=[0, max(df['percentage_of_total']) * 1.1]
-    ),
-    legend=dict(
-        font=dict(size=16, color='#000000', family="Arial"),
-        orientation='h',
-        yanchor='bottom',
-        y=1.02,
-        xanchor='right',
-        x=1
-    ),
-    plot_bgcolor='white',
-    height=800,
-    width=1200,
-)
+        yaxis=dict(
+            title=dict(text='Number of Conversions', font=fonts['axis_title']),
+            tickfont=fonts['tickfont'],
+            showgrid=True, gridwidth=1, gridcolor=colors['grid'],
+        ),
+        yaxis2=dict(
+            title=dict(text='Percentage of Total Conversions', font=fonts['axis_title']),
+            tickfont=fonts['tickfont'],
+            range=[0, max_percentage * 1.1],
+            showgrid=False,
+        ),
+        legend=dict(
+            font=fonts['legendfont'],
+            orientation='h',
+            yanchor='bottom',
+            y=1.02,
+            xanchor='right',
+            x=1
+        ),
+        plot_bgcolor=colors['background'],
+        height=800,
+        width=1200,
+    )
 
-#axes
-fig.update_xaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
-fig.update_yaxes(showgrid=True, gridwidth=1, gridcolor='lightgray')
+    return fig
 
-
-fig.show()
-fig.write_image("google_time_lag.png", scale = 5, width = 1920, height = 1080)
+if __name__ == "__main__":
+    main()
